@@ -82,10 +82,5 @@
   "eslintIgnore": [
     "build/**",
     "packages/**"
-  ],
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  }
+  ]
 }
