@@ -27,6 +27,15 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import Font from '@ckeditor/ckeditor5-font/src/font';
+// import FontFamily from '@ckeditor/ckeditor5-font/src/fontfamily';
+// import Bold from '@ckeditor/ckeditor5-basic-styles/src/bold';
+// import Italic from '@ckeditor/ckeditor5-basic-styles/src/italic';
+import Underline from '@ckeditor/ckeditor5-basic-styles/src/underline';
+import Strikethrough from '@ckeditor/ckeditor5-basic-styles/src/strikethrough';
+// import Code from '@ckeditor/ckeditor5-basic-styles/src/code';
+// import Subscript from '@ckeditor/ckeditor5-basic-styles/src/subscript';
+// import Superscript from '@ckeditor/ckeditor5-basic-styles/src/superscript';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -52,7 +61,10 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Font,
+	Underline,
+	Strikethrough
 ];
 
 // Editor configuration.
@@ -63,6 +75,12 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'underline', 
+			'strikethrough',
+			'fontSize', 
+			'fontColor', 
+			'fontBackgroundColor',
+			'|',
 			'link',
 			'bulletedList',
 			'numberedList',
